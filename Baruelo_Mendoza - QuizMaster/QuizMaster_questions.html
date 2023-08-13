@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Master</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <meta content="text/html;charset=utf-8"/>
+        <link type="text/css" rel="stylesheet" href="QM_styles.css"> 
+
+
+    </head>
+    <body>
+		<audio src="QM_BG1.mp3" autoplay loop>
+			<embed src="QM_BG1.mp3" autostart="true" loop="true" hidden="true">
+		</audio>
+		
+		<div class="container0" id="instructions">
+            <h3>Archeology Edition</h3>
+			<h1>Quiz Master</h1>
+            <div class="q_container">
+                <h2>Quiz Master Instructions</h2><br>
+				<p>1. There's no time limit for this quiz.</p>
+				<p>2. You can't exit from the quiz while you're playing. If you do so, your progress would become zero.</p>
+				<p>3. You'll get points on the basis of your correct answers.</p>
+				<p>4. Last but not the least, enjoy the quiz we prepared for you!</p>
+				<div class="q_buttons"><br>
+					<p><button class="submit"><a href="#question1">Start the Quiz</a></button></p>
+				</div>
+			</div>
+        </div>
+			
+        <form>
+<!--for question 1-->
+            <div class="container1" id="question1">
+                <h3>Archeology Edition</h3>
+				<h1>Quiz Master</h1>
+                <div class="q_container" >
+            
+                    <div class="question">
+                        <h2>Q1. What is the name of the river the ancient Egyptians lived along?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q1" value="Mississippi"> Mississippi</p></label>
+                        <label><p><input type="radio" name="q1" value="Amazon"> Amazon</p></label>
+                        <label><p><input type="radio" name="q1" value="Seine"> Seine</p></label>
+                        <label><p><input type="radio" name="q1" value="Nile" id="correct1"> Nile</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#instructions">Back</a></p>
+                        <p><button  class="submit" onclick="getResult1()"><a href="#question2">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 2-->
+            <div class="container2" id="question2">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q2. What name does the people of ancient Egypt call their king?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q2" value="President"> President</p></label>
+                        <label><p><input type="radio" name="q2" value="Pharaoh" id="correct2"> Pharaoh</p></label>
+                        <label><p><input type="radio" name="q2" value="King"> King</p></label>
+                        <label><p><input type="radio" name="q2" value="Lord"> Lord</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question1">Back</a></p>
+                        <p><button  class="submit" onclick="getResult2()"><a href="#question3">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 3-->
+            <div class="container3" id="question3">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q3. Most of Mesopotamia is in what modern-day country?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q3" value="Egypt"> Egypt</p></label>
+                        <label><p><input type="radio" name="q3" value="Iraq" id="correct3"> Iraq</p></label>
+                        <label><p><input type="radio" name="q3" value="Iran"> Iran</p></label>
+                        <label><p><input type="radio" name="q3" value="Greece"> Greece</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question2">Back</a></p>
+                        <p><button  class="submit" onclick="getResult3()"><a href="#question4">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 4-->
+            <div class="container4" id="question4">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q4. The Hanging Gardens of Babylon were built by who?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q4" value="Daniel"> Daniel</p></label>
+                        <label><p><input type="radio" name="q4" value="Nebololassar"> Nebololassar</p></label>
+                        <label><p><input type="radio" name="q4" value="Nebuchadnezzar II" id="correct4"> Nebuchadnezzar II</p></label>
+                        <label><p><input type="radio" name="q4" value="Zedekiah"> Zedekiah</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question3">Back</a></p>
+                        <p><button  class="submit" onclick="getResult4()"><a href="#question5">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 5-->
+            <div class="container5" id="question5">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q5. The writing system of the Sumerians was called what?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q5" value="Morse Code"> Morse Code</p></label>
+                        <label><p><input type="radio" name="q5" value="Cuneiform" id="correct5"> Cuneiform</p></label>
+                        <label><p><input type="radio" name="q5" value="Javascript"> Javascript</p></label>
+                        <label><p><input type="radio" name="q5" value="Scribes"> Scribes</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question4">Back</a></p>
+                        <p><button  class="submit" onclick="getResult5()"><a href="#question6">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 6-->
+            <div class="container6" id="question6">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q6. Which modern Egyptian city occupied the ancient Thebes site?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q6" value="Luxor" id="correct6"> Luxor</p></label>
+                        <label><p><input type="radio" name="q6" value="Gisa"> Gisa</p></label>
+                        <label><p><input type="radio" name="q6" value="Memphis"> Memphis</p></label>
+                        <label><p><input type="radio" name="q6" value="Tanta"> Tanta</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question5">Back</a></p>
+                        <p><button  class="submit" onclick="getResult6()"><a href="#question7">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 7-->
+            <div class="container7" id="question7">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q7. What is the name of the first King of the Babylonian Empire?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q7" value="Cyrus the Great"> Cyrus the Great</p></label>
+                        <label><p><input type="radio" name="q7" value="Sargon of Akkad"> Sargon of Akkad</p></label>
+                        <label><p><input type="radio" name="q7" value="Sargon II"> Sargon II</p></label>
+                        <label><p><input type="radio" name="q7" value="Hammurabi" id="correct7"> Hammurabi</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question6">Back</a></p>
+                        <p><button  class="submit" onclick="getResult7()"><a href="#question8">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 8-->
+            <div class="container8" id="question8">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q8. What year is the end of the world based on the Mayan calendar?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q8" value="2012" id="correct8"> 2012</p></label>
+                        <label><p><input type="radio" name="q8" value="2022"> 2022</p></label>
+                        <label><p><input type="radio" name="q8" value="2032"> 2032</p></label>
+                        <label><p><input type="radio" name="q8" value="2042"> 2042</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question7">Back</a></p>
+                        <p><button  class="submit" onclick="getResult8()"><a href="#question9">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 9-->
+            <div class="container9" id="question9">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q9. The people of Mesopotamia wrote on what?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q9" value="Visual Studio Code"> Visual Studio Code</p></label>
+                        <label><p><input type="radio" name="q9" value="Paper"> Paper</p></label>
+                        <label><p><input type="radio" name="q9" value="Stone Tablet"> Stone Tablet</p></label>
+                        <label><p><input type="radio" name="q9" value="Clay" id="correct9"> Clay</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question8">Back</a></p>
+                        <p><button  class="submit" onclick="getResult9()"><a href="#question10">Next</a></button></p>
+                    </div>
+                </div>
+            </div>
+
+<!--for question 10-->
+            <div class="container10" id="question10">
+				<h3>Archeology Edition</h3>
+                <h1>Quiz Master</h1>
+                <div class="q_container">
+                    <div class="question">
+                        <h2>Q10. What treaty was negotiated by the Hittites with Egypt?</h2>
+                    </div>
+                    <div class="choices">
+                        <label><p><input type="radio" name="q10" value="Treaty of Damas"> Treaty of Damas</p></label>
+                        <label><p><input type="radio" name="q10" value="Treaty of Kadesh" id="correct10"> Treaty of Kadesh</p></label>
+                        <label><p><input type="radio" name="q10" value="Treaty of Paris"> Treaty of Paris</p></label>
+                        <label><p><input type="radio" name="q10" value="Treaty of Emar"> Treaty of Emar</p></label>
+                    </div>
+                    <div class="q_buttons">
+						<p><a href="#question9">Back</a></p>
+                        <p><button  class="submit" onclick="getResult10()"><a href="#answers">Submit</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <div class="answers" id="answers">
+                <h1>Thank you for taking the quiz!</h1>
+                <div class="scores_cont">
+                    <label id="for_score">Your Score is: <input type="text" value="" id="final_score" disabled></label>
+                    <input type="button" name="score" id="view_score" value="score" onclick="scores()">
+                </div>
+
+                <div id="results">
+                    <h2>Here are the copy of your answers</h2>
+                    <p><div id="result1"> </div></p>
+                    <p><div id="result2"> </div></p>
+                    <p><div id="result3"> </div></p>
+                    <p><div id="result4"> </div></p>
+                    <p><div id="result5"> </div></p>
+                    <p><div id="result6"> </div></p>
+                    <p><div id="result7"> </div></p>
+                    <p><div id="result8"> </div></p>
+                    <p><div id="result9"> </div></p>
+                    <p><div id="result10"> </div></p>
+                </div><br>
+                <div class="answer_buttons">
+                    <p><a href="#answer_key">Answer Key</a></p>
+					<p><a href="QuizMaster_questions.html">Replay</a><p>
+                    <p><a href="QuizMaster_home.html">Home</a></p>
+                </div>
+        </div>
+		
+		<div class="answer_key" id="answer_key">
+			<h1>Answer Key</h1>
+            <div id="answerkey">
+                <p>Q1. What is the name of the river the ancient Egyptians lived along? <br><em>- Nile</em></b></p>
+				<p>Q2. What name does the people of ancient Egypt call their king? <br><em>- Pharaoh</em></p>
+				<p>Q3. Most of Mesopotamia is in what modern-day country? <br><em>- Iraq</em></p>
+				<p>Q4. The Hanging Gardens of Babylon were built by who? <br><em>- Nebuchadnezzar II</em></p>
+				<p>Q5. The writing system of the Sumerians was called what? <br><em>- Cuneiform</em></p>
+				<p>Q6. Which modern Egyptian city occupied the ancient Thebes site? <br><em>- Luxor</em></p>
+				<p>Q7. What is the name of the first King of the Babylonian Empire? <br><em>- Hammurabi</em></p>
+				<p>Q8. What year is the end of the world based on the Mayan calendar? <br><em>- 2012</em></p>
+				<p>Q9. The people of Mesopotamia wrote on what? <br><em>- Clay</em></p>
+				<p>Q10. What treaty was negotiated by the Hittites with Egypt? <br><em>- Treaty of Kadesh</em></p>
+			</div><br>
+			<div class="answer_buttons">
+				<p><a href="#answers">Back</a></p>
+				<p><a href="QuizMaster_questions.html">Replay</a></p>
+				<p><a href="QuizMaster_home.html">Home</a></p>
+			</div>
+		</div>
+        <script src="QM_script.js"></script>
+    </body>
+</html>
